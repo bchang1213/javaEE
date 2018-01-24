@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Checkerboard</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<%  
+	String w = request.getParameter("width");
+	String h = request.getParameter("height");
+	Integer width = 0;
+	Integer height = 0;
+	%>
+	<% if(w == null) { %>
+		<% width = 10; %>
+	<% } else { %>
+		<% width = Integer.parseInt(w); %> 
+	<% } %>
+	
+	<% if(h == null) { %>
+		<% height = 10; %>
+	<% } else { %>
+		<% height = Integer.parseInt(h); %> 
+	<% } %>
+
+	<h1>Checkerboard <%= width %>w x <%=  height %>h</h1>
+	<%for(int i = 1; i == width;i++){ %>
+	<div class='block'></div>
+	<%} %>
+</body>
+</html>

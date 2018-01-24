@@ -1,0 +1,41 @@
+package com.brianchang.web.models;
+import java.text.SimpleDateFormat;  
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public class Timer {
+	private String start;
+	private String stop;
+	private String runningtime;
+	
+	public String startTimer() {
+		//Create a variable called start to hold the current date.	
+		Date startdate = Calendar.getInstance().getTime();
+		//Create a format for the date.
+		DateFormat formatDate = new SimpleDateFormat("HH:mm:ss:SSS");
+		//Format the current time using the format from above, and assign it to start.
+		start = formatDate.format(startdate);
+		//return the start time.
+		return start;
+	}
+	
+	public String stopTimer() {
+		//Create a variable called start to hold the current date.	
+		Date stopdate = Calendar.getInstance().getTime();
+		//Create a format for the date.
+		DateFormat formatDate = new SimpleDateFormat("HH:mm:ss:SSS");
+		//Format the current time using the format from above, and assign it to start.
+		stop = formatDate.format(stopdate);
+		//return the start time.
+		return stop;
+	}
+	
+	public void showRunningTime() {
+		Timer.startTimer();
+		Timer.stopTimer();
+		System.out.println(start);
+		System.out.println(stop);
+	}
+	
+}

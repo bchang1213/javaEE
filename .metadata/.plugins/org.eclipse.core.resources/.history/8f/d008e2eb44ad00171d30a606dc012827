@@ -1,0 +1,6 @@
+package com.brianchang.web.models;
+
+public class Team {
+	private String first_name;
+	private String last_name;
+}

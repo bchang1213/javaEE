@@ -1,0 +1,16 @@
+package com.brianchang.web.models;
+
+public class Dog extends Animal implements Pet{
+
+	@Override
+	public String showAffection() {
+		int w = getWeight();
+		if(w < 30) {
+			return getName() + " hopped into your lap and cuddled you!"
+		}
+		if(w >= 30) {
+			return getName() + " curled up next to you!"
+		}
+	}
+
+}

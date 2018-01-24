@@ -1,0 +1,6 @@
+package com.brianchang.web.models;
+
+public class Team {
+	private String team_name;
+	private ArrayList<Player> player_list = new ArrayList<Player>();
+}

@@ -1,0 +1,55 @@
+package com.brianchang.web.models;
+import java.util.concurrent.TimeUnit;
+import java.util.Date;
+
+public class Timer {
+	private Date start;
+	private Date stop;
+	
+	//Getters and setters for start and stop.
+	public Date getStart() {
+		return start;
+	}
+
+	public void setStart(Date start) {
+		this.start = new Date();
+	}
+
+	public Date getStop() {
+		return stop;
+	}
+
+	public void setStop(Date stop) {
+		this.stop = new Date();
+	}
+
+	public String startTimer() {
+		//Create a variable called start to hold the current date.	
+		Date startdate = Calendar.getInstance().getTime();
+		//Create a format for the date.
+		DateFormat formatDate = new SimpleDateFormat("HH:mm:ss:SSS");
+		//Format the current time using the format from above, and assign it to start.
+		start = formatDate.format(startdate);
+		//return the start time.
+		return start;
+	}
+	
+	public String stopTimer() {
+		//Create a variable called start to hold the current date.	
+		Date stopdate = Calendar.getInstance().getTime();
+		//Create a format for the date.
+		DateFormat formatDate = new SimpleDateFormat("HH:mm:ss:SSS");
+		//Format the current time using the format from above, and assign it to start.
+		stop = formatDate.format(stopdate);
+		//return the start time.
+		return stop;
+	}
+	
+	public void showRunningTime() {
+		startTimer();
+		stopTimer();
+		System.out.println(start);
+		System.out.println(stop);
+	}
+	
+}

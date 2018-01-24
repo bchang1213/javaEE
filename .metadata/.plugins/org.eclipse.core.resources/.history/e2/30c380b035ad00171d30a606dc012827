@@ -1,0 +1,15 @@
+package com.brianchang.web.models;
+
+import java.util.Random;
+
+public class RandomNumber {
+	
+	public int generateNumber() {
+		Random r = new Random();
+		int Low = 1;
+		int High = 100;
+		int Result = r.nextInt(High-Low) + Low;
+		return Result;
+	}
+
+}

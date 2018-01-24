@@ -1,0 +1,9 @@
+package com.brianchang.web.models;
+
+public class Animal {
+	private String name;
+	private String breed;
+	private int weight;
+	
+	
+}

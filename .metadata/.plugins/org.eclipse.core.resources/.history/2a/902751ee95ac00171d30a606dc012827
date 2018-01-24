@@ -1,0 +1,32 @@
+package com.brianchang.web.models;
+import java.util.concurrent.TimeUnit;
+import java.util.Date;
+
+public class Timer {
+	private Date start;
+	private Date stop;
+	
+	//Getting start and stop
+	public Date getStart() {
+		return start;
+	}
+
+		public Date getStop() {
+		return stop;
+	}
+	
+	//Setting start and stop
+	public void setStart(Date start) {
+		this.start = new Date();
+	}
+
+	public void setStop(Date stop) {
+		this.stop = new Date();
+	}
+
+	//Get the total running time, after start and stop.
+	
+	//Get the current running time, after start for monitoring.
+	
+	
+}

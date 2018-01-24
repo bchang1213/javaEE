@@ -1,0 +1,25 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	width: 500px;
+	height: 500px;
+}
+
+div.block{
+	display: inline-block;
+}
+
+div.block:nth-child(even){
+	width:10px;
+	height: 10px;
+	background-color:green;
+}
+
+div.block:nth-child(odd){
+	width:10px;
+	height: 10px;
+	background-color:red;
+}

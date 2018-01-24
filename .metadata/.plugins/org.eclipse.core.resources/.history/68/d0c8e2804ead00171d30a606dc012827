@@ -1,0 +1,22 @@
+package com.brianchang.web.models;
+
+import java.util.ArrayList;
+
+public class Team {
+	private Integer id;
+	private String team_name;
+	private ArrayList<Player> player_list = new ArrayList<Player>();
+
+	public String getTeam_name() {
+		return team_name;
+	}
+	public void setTeam_name(String team_name) {
+		this.team_name = team_name;
+	}
+	public ArrayList<Player> getPlayer_list() {
+		return player_list;
+	}
+	public void setPlayer_list(ArrayList<Player> player_list) {
+		this.player_list = player_list;
+	}
+}

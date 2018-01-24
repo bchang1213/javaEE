@@ -1,0 +1,27 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	width: 500px;
+	height: 500px;
+}
+
+div.block{
+	display: inline-block;
+}
+
+#checkerboard:nth-child(odd){
+	width:1em;
+	height: 1em;
+	background-color:red;
+	
+}
+
+#checkerboard:nth-child(even){
+	width:1em;
+	height: 1em;
+	background-color:green;
+}
+ 

@@ -1,0 +1,23 @@
+package com.brianchang.web.models;
+
+public class Dog extends Animal implements Pet{
+	
+	public Dog(String name, String breed, int weight) {
+		this.name = name;
+		this.breed = breed;
+		this.weight = weight;
+	}
+	
+	@Override
+	public String showAffection() {
+		String s = null;
+		if(weight < 30) {
+			s = this.name + " hopped into your lap and cuddled you!";
+		}
+		if(weight >= 30) {
+			s = this.name + " curled up next to you!";
+		}
+		return s;
+	}
+
+}
